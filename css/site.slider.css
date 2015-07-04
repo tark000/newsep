@@ -1,0 +1,81 @@
+.accordian {
+    height: 485px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.accordian ul {
+    width: 2000px;
+}
+
+.accordian li:first-child {
+	border-left: none;
+}
+
+.accordian li {
+    position: relative;
+    display: block;
+    width: 185px;
+    float: left;
+	border-left: 1px solid #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.accordian ul li.active {
+	 width: 484px;
+}
+
+.accordian ul:hover li {width: 158px;}
+
+.accordian ul li:hover {width: 484px;}
+
+.accordian li img {
+    display: block;
+	height:485px;
+	width:484px;
+}
+
+.accordian ul li:hover .image_title, .accordian ul li.active .image_title {
+	display:block;
+}
+
+.image_title {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0; bottom: 0; 
+	width: 444px;
+	padding: 20px;
+	display:none;
+}
+
+.image_title a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+	text-decoration: none;height: 67px; overflow: hidden;
+}
+
+.image_title a:hover {
+    text-decoration: underline;
+}
+
+.image_title p {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+	margin: 12px 0;
+}
+
+.image_title a.read {
+    color: #ffcf3b;
+    text-decoration: none;
+    padding: 0 0 4px 0;
+    font-size: 14px;
+	border-bottom: 3px solid #ffcf3b;
+	display: inline-block;
+}
+

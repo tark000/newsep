@@ -1,0 +1,138 @@
+/*** Begin Basic Styles ***/
+
+BODY {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-size: 13px;
+	color: #606060;
+	font-family: arial;
+	font-weight: normal;
+}
+a {
+	color: #000;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+a img, fieldset {
+	border: none;
+}
+input:focus, textarea:focus, select:focus {
+	outline: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.clr {
+	clear: both;
+}
+
+/*** End Basic Styles ***/
+
+/*** Begin Container Styles ***/
+.bg {
+
+}
+
+.container {
+     width: 300px;
+     margin: 0 auto;
+     padding: 0;
+}
+
+/*** End Footer Styles ***/
+
+/*** Begin Login ***/
+
+.login_bl {
+	margin: 120px 0 0 0;
+}
+
+.login_bl a.logo {
+	width: 181px;
+	height: 68px;
+	display: block;
+	margin: 0 0 18px 0;
+}
+
+.login_bl input[type="text"], .login_bl input[type="password"] {
+	width: 237px;
+	height: 48px;
+	background: #f9f9f9;
+	color: #606060;
+	border: none;
+	padding: 0 0 0 63px;
+	margin: 0 0 10px 0;
+	box-shadow: inset 48px 0px 0px rgba(155,155,155,0.1);
+}
+
+.login_bl input#login {
+	background: #f9f9f9 url(../img/admin-sprite.png) no-repeat -466px -147px;
+}
+.login_bl input#login.error {
+	background: #f9f9f9 url(../img/admin-sprite.png) no-repeat -464px -365px;
+}
+
+.login_bl input#password {
+	background: #f9f9f9 url(../img/admin-sprite.png) no-repeat -466px -186px;
+}
+.login_bl input#password.error {
+	background: #f9f9f9 url(../img/admin-sprite.png) no-repeat -464px -414px;
+}
+
+.login_bl input.button {
+	width: 300px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	border: none;
+	background: #333;
+	color: #fff;
+	font-size: 18px;
+}
+
+.login_bl input.button:hover {
+	background: #111;
+	color: #fff;
+	cursor: pointer;
+}
+
+.login_links {
+	padding: 14px 0;
+	font-size: 11px;
+}
+
+.login_links a {
+	text-decoration: none;
+	color: #606060;
+}
+
+.login_links a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.login_bl .mess {
+	margin: 0 0 30px 0;
+	padding: 0 0 0 28px;
+	font-size: 14px;
+	color: #606060;
+	display: none;
+	min-height: 21px;
+}
+
+.login_bl .mess.error {
+	background: url(../img/admin-sprite.png) no-repeat -474px -237px;
+}
+
+.login_bl .mess.valid {
+	background: url(../img/admin-sprite.png) no-repeat -474px -277px;
+}
+
+/*** End Login ***/

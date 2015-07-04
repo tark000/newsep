@@ -1,0 +1,161 @@
+/* --------------------------------------------------------------------------
+ *
+ * Copyright themeforest.net
+ * The following CSS is to be used only for purchased design
+ *
+ * -------------------------------------------------------------------------*/
+html, body {
+  height:100%;
+}
+body {
+  background:#ffffff;
+  margin:0;
+  font-family:Tahoma, sans-serif;
+  font-size:18px;
+}
+/********************************/
+/* Quick CSS Reset
+/********************************/
+img {
+  border:0;
+}
+a, input {
+  outline:none !important;
+}
+/********************************/
+/* Layout
+/********************************/
+.wrapper {
+  background:url(images/bg.jpg) no-repeat center center;
+  margin:0 auto;
+  position:relative;
+  float:left;
+  width:100%;
+  height:100%;
+}
+.main-page { 
+  width:1080px;
+  margin: 10px auto;
+  padding:40px 0 100px;
+}
+.header {
+  height:38px;
+}
+.clear {
+  clear:both;
+}
+.logo {
+  text-align: center;
+  
+}
+/********************************/
+/* Content 
+/********************************/
+.content {
+  text-align:center;
+  padding:45px 0 50px;
+}
+.content p {
+  font-size:30px;
+  font-family:Tahoma;
+  color:#1e1415;
+  margin:0; text-align: left;
+}
+.search p{font-size: 18px; text-align: center;}
+.error-text {
+  margin-bottom:25px;
+  margin-left: 51%;
+  padding-left: 20px;
+  color: #1e1415;
+}
+
+.error-image {
+  width: 50%; float: left;
+  color: #717070; font-size: 278px;line-height: 258px;
+  font-family: Tahoma; font-weight: bold;
+}
+.repair-text{padding-bottom: 40px;}
+.repair-text ,
+.repair-text p,
+.repair-text .oops{
+    text-align: center;
+}
+.repair-text .oops{
+    margin: 0 0 60px;
+}
+.oops{
+  font-size:54px;
+  color:#1e1415; text-align: left;
+  margin:60px 0px 26px 0px;
+}
+
+.error-text h2.title {
+  font-size:35px;
+  font-weight:bold;
+  margin:15px 0 5px 0;
+  color:#fff;
+}
+/********************************/
+/* Search Box
+/********************************/
+
+.search {
+  width:646px;
+  height:120px;
+  margin:50px auto 30px;
+  border-bottom: 7px solid #f8e834;
+}
+.search p{margin-bottom: 30px;}
+.search .input-box {
+  background:url(images/search-field.png) no-repeat 0 0;
+  
+  float:left;
+}
+.search .input-box input {
+  border:0;
+  background:0;
+  font-size:20px;
+  color:#1e1415;
+  width:582px;padding: 8px 0 32px;
+}
+.search input.submit {
+  background:url(images/search-icon.png) no-repeat 0 0;
+  width:30px;
+  height:30px;
+  cursor:pointer;
+  text-indent:-99999px;
+  font-size:0;
+  line-height:0;
+  border:0;
+  padding:0;
+}
+/********************************/
+/* Nav Links
+/********************************/
+.nav-links {
+  float:left;
+  padding-left:28px;
+}
+/********************************/
+/* Footer
+/********************************/
+.footer{
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none; font-size: 18px; color: #1e1415;
+    display: inline-block; float: none;
+    }
+.footer a + a{margin-left: 100px;}
+/********************************/
+/* Miscell
+/********************************/
+.feed-icons {
+  float:right;
+  padding-right:30px;
+}
+.feed-icons ul li {
+  border:0;
+  padding:0 4px;
+}
