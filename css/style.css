@@ -9,6 +9,14 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/*transition*/
+.search-blok input[type="text"], .search-blok input[type="search"], a {
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
 .page-wrapper {
     min-height: 100%;
     margin-bottom: -78px;
@@ -122,7 +130,7 @@ padding:3px 20px;
     content: ''; display: table; clear: both;
 }
 .head{
-    padding: 22px 0;
+    padding: 12px 0;
 }
 .header {
     background: -webkit-linear-gradient(#DEDEDE, #fff); /* For Safari 5.1 to 6.0 */
@@ -134,44 +142,68 @@ padding:3px 20px;
     width: 273px;
     height: 75px;
     float: left;
+    margin-left: 10px;
 }
 
 .search-blok{
-    float: right;
-    border: 1px solid #eaeaea;
-    padding: 12px; font-size: 18px; color: #828282;
+    float: left;
+    padding: 21px 0;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
-.search-blok input[type="text"],
-.search-blok input[type="search"]{
-    background-color: #eaeaea;
-    line-height: 26px; padding: 9px 15px 10px;
+.search-blok input[type="text"], .search-blok input[type="search"]{
+    background-color: #f6f6f6;
+    line-height: 30px; 
+    height: 30px;
+    color:  #9c9e9f;
+    font-size: 15px; /* Approximation due to font substitution */
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    padding-left: 10px;
+    -webkit-box-shadow: 0px 0px 0px 0px #ccc;
+    -moz-box-shadow:    0px 0px 0px 0px #ccc;
+    box-shadow:         0px 0px 0px 0px #ccc;
+
 }
-.search-blok input[type="text"]:focus,
-.search-blok input[type="search"]:focus{
+.search-blok input[type="text"]:focus, .search-blok input[type="search"]:focus{
     background-color: #f1f1f1;
+    -webkit-box-shadow: 0px 1px 7px 2px #ccc;
+    -moz-box-shadow:    0px 1px 7px 2px #ccc;
+    box-shadow:         0px 1px 7px 2px #ccc;
 }
 .search-blok [type="submit"]{
-    background: #ffb533;
-    height: 44px;
+    height: 30px;
     margin: 0;
     margin-left: 10px;
     padding: 0;
-    width: 42px;
+    width: 30px;
     border: none;
     outline: none;
     cursor: pointer;
     position: relative;
     float: left;
+    background-color: transparent;
+    margin-right: 10px;
 }
-.search-blok [type="submit"]:hover{background-color: #FFC051;}
-.search-blok [type="submit"]:after{
-    content: ''; display: inline-block; top: 15px; left: 14px;
-    position: absolute; width: 17px; height: 17px; 
-    background: url(../img/sprite.png) 0 0 no-repeat;
+
+.search-blok [type="submit"] i {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-image:url('../img/img.png');
+    background-repeat:no-repeat;
+    background-position:-61px 0px;
+    width:20px;
+    height:20px;
 }
-.search-blok input + input{margin-left: 20px;}
-.search-blok #search{width: 400px;}
-.search-blok input.date{width: 150px;}
+
+
+
+.search-blok input + input{margin-left: 5px;}
+.search-blok #search{width: 170px;}
+.search-blok input.date{width: 60px;}
 .ui-widget-header {
 color: #777;
 }
@@ -230,32 +262,65 @@ position: relative; font-weight: 100;
 ul.navmenu li{float: left; display: inline-block;}
 .main-menu ul.navmenu li a{ 
     display: block; color: #fff; text-decoration: none; 
-    padding: 21px 35px; text-transform: uppercase;
-    font-size: 14px; font-weight: bold; text-shadow: 1px 1px 0 #333;
+    padding: 21px 70px; text-transform: uppercase;
+    font-size: 15px; font-weight: 500; text-shadow: 1px 1px 0 #333;
     }
-.main-menu ul.navmenu li a:hover{background-color: #0064c1;}
-.social{display: inline-block; float: right;}
-.social a{
-    width: 25px; height: 25px;
-    display: inline-block; margin: 17px 3px 16px;
-    background: url(../img/sprite.png) no-repeat;
+.main-menu ul.navmenu li a.active {
+    color: #ffb533;
 }
-.social a.fb{background-position: 0 -19px;}
+.main-menu ul.navmenu li a:hover{background-color: #0064c1;}
+.social{display: inline-block; float: right;padding: 24px 0;}
+.social a{
+    width:21px;height:21px;
+    display: inline-block; 
+    background: url(../img/sprite.png) no-repeat;
+    float:left;
+    margin-right: 30px;
+}
+.social a.fb{background: url(../img/img.png) no-repeat;background-position:-21px -36px;width:21px;height:21px;}
 .social a.vk{background-position: -37px -19px;}
 .social a.br{background-position: -76px -19px;}
-.social a.yt{background-position: -112px -19px;}
+.social a.yt{background: url(../img/img.png) no-repeat;background-position:-36px -18px;width:25px;height:18px;margin-top: 1px;}
+.header-link {
+    padding: 26px 0;
+    float: left;
+}
+.header-link a{
+    color:  #3e3d40;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17px;
+}
+.header-link a:hover {
+    color:  #5e5d60;
+}
+.contact-link{
+    float: right;
 
+}
 .lang{
-  margin-left: 25px;
-  text-align: center;
-  float: right;
-  display: inline-block;
+    margin: 21px 0;
+    font-weight: 500;
+    text-align: center;
+    float: right;
+    display: inline-block;
+    border-left: 1px solid rgb(156, 158, 159);
+}
+.lang a {
+    color:  #9c9e9f;
+    font-size: 14px; 
+    font-weight: 500;
+    margin-left: 15px;
+}
+.lang a.active {
+    color: #ffb533;
 }
 .lang .dropdown-toggle{
   font-size: 14px; line-height: 62px;
   font-weight: bold;    color: #fff;
   padding: 15px;
 }
+
 .lang .dropdown{padding-right: 10px;}
 .lang .open.dropdown,
 .lang .dropdown:hover{background-color: #0064c1;}
@@ -301,7 +366,13 @@ input.search:focus{
     width: 240px;
     border: 1px solid  rgba(165, 165, 165, 0.2);
 }
-
+span.defis {
+    color:  #1a171b;
+font-size: 15px;
+font-weight: 500;
+line-height: 30px;
+font-weight: bold;
+}
 
 .slider{
     background: url(../img/bg2.jpg);
@@ -431,16 +502,32 @@ input.search:focus{
     color: #fff; font-size: 14px;
 }
 .footer{
-    background-color: #3a3a3a;
-    min-height: 50px;
-    padding-bottom: 15px;
+    background-color: #3e3d40;
+    min-height: 172px;
+   
+}
+.footer ul.navmenu {
+    width: 720px;
+    display: inline-block;
+    float: left;
+}
+.footer ul.navmenu li {
+    max-width: 25%;
+    padding: 10px;
 }
 .footer ul.navmenu li a{ 
-    display: block; color: #fff; text-decoration: none; 
-    padding: 21px 15px; text-transform: uppercase;
-    font-size: 14px; 
+    display: block; 
+    text-decoration: none; 
+    color:  #ffffff;
+    padding: 3px 0;
+    font-size: 14px;
+    line-height: 13px;
     }
-
+.footer ul.navmenu li span {
+    color:  #ffb533;
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
 #slidesContainer {
 position: relative;
@@ -795,4 +882,8 @@ top: 150px;
     border-radius: 5px;
     text-align: center;
     width: 100%;
+}
+
+.floatRt {
+    float: right;
 }
