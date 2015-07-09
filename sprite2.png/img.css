@@ -1,0 +1,15 @@
+/* glue: 0.4 hash: 48d6e57811 */
+.sprite-img-footer_logo2,
+.sprite-img-youtube_w,
+.sprite-img-youtube_b,
+.sprite-img-fb_w,
+.sprite-img-fb_b,
+.sprite-img-search,
+.sprite-img-treingle_right{background-image:url('img.png');background-repeat:no-repeat}
+.sprite-img-footer_logo2{background-position:0px 0px;width:36px;height:36px;}
+.sprite-img-youtube_w{background-position:-36px 0px;width:25px;height:18px;}
+.sprite-img-youtube_b{background-position:-36px -18px;width:25px;height:18px;}
+.sprite-img-fb_w{background-position:0px -36px;width:21px;height:21px;}
+.sprite-img-fb_b{background-position:-21px -36px;width:21px;height:21px;}
+.sprite-img-search{background-position:-61px 0px;width:20px;height:20px;}
+.sprite-img-treingle_right{background-position:-61px -20px;width:6px;height:8px;}
